@@ -1,0 +1,9 @@
+CSS COLORS 
+  
+--text: #0f0f10;
+--background: #f7f7f8;
+--primary: #9ca1a5;
+--secondary: #dadbdd;
+--accent: #8f9499;
+
+
