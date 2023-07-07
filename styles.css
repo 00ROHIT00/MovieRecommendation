@@ -7,9 +7,10 @@
 body{
     background : #f7f7f8;
     padding : 5px;
+    
 }
 
-.header {
+.header {                       /*THE WHOLE HEADER*/
     border : black 2px solid;
     padding : 5px;
     display : flex;
@@ -18,9 +19,9 @@ body{
     font-family: 'Inconsolata', monospace;
 }
  
-.navbar a
+.navbar a                    /*THE NAVBAR ON THE RIGHT SIDE*/
  {
-    margin-left: 15px;
+    margin-left: 10px;
     text-decoration: none;
     font-size: 20px;
     transition: .3s;
@@ -31,10 +32,13 @@ body{
     -o-transition: .3s;
 }
 
- .navbar a:hover ,
- .navbar .active               /*NAVBAR ANIMATION*/
+ .navbar a:hover             /*NAVBAR ANIMATION*/
  {
     color : #8f9499;
+    text-decoration: underline;
+ }
+ .navbar .active 
+ {
     text-decoration: underline;
  }
 
