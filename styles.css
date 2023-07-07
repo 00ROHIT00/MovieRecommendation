@@ -1,0 +1,45 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background : #f7f7f8;
+    padding : 5px;
+}
+
+.header {
+    border : black 2px solid;
+    padding : 5px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;;
+    font-family: 'Inconsolata', monospace;
+}
+ 
+.navbar a
+ {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+    color : #0f0f10;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+ .navbar a:hover ,
+ .navbar .active               /*NAVBAR ANIMATION*/
+ {
+    color : #8f9499;
+    text-decoration: underline;
+ }
+
+ .header span 
+ {
+    font-size : 25px;
+ }
+
