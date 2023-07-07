@@ -7,7 +7,6 @@
 body{
     background : #f7f7f8;
     padding : 5px;
-    
 }
 
 .header {                       /*THE WHOLE HEADER*/
@@ -46,4 +45,102 @@ body{
  {
     font-size : 25px;
  }
+/*END OF HEADER AND NAVBAR*/
+/*MAIN CONTENT*/
+.container 
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height : 150px;
+    border : lime 1px solid;
+}
 
+.cw               /*THE MAIN HEADING*/
+{
+    font-family: 'Azeret Mono', monospace;
+    font-size : 85px;
+    color : #0f0f10;
+    position : relative;
+    width : fit-content;
+    align-self : flex-end;
+}
+
+.cw::before,              /*ANIMATING THE CARET*/
+.cw::after{
+    content : '';
+    position: absolute;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+
+}
+
+.cw::before{
+    background: #f7f7f8;
+    animation: typewriter 3s steps(9) forwards;
+    -webkit-animation: typewriter 3s steps(9) forwards;
+}
+
+.cw::after{
+    width: 5px;
+    background: black;
+    animation:  typewriter 3s steps(9)  forwards,    blink 750ms steps(9) 1s infinite;
+    -webkit-animation:  typewriter 3s steps(9)  forwards,    blink 750ms steps(9) 1s infinite;
+}
+@keyframes typewriter            
+{
+    to { left : 100%; }
+}
+
+@keyframes blink
+{
+    to 
+    {
+        background : transparent;
+    }
+}
+  /*END OF ANIMATING THE HEADING*/
+  /*THE DIV CONTAINING THE BUTTON*/
+  
+  .button
+  {
+    border : lime 2px solid;
+    height : 150px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .button a
+  {
+    text-decoration: none;
+    color : #0f0f10;
+  }
+
+   .button .btn{
+    border: #0f0f10 2px solid;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f9499;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+   }
+
+ .btn:hover{
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: scale(110%);
+    -o-transform: scale(110%);
+}
