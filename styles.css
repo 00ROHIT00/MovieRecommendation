@@ -21,6 +21,7 @@ body{
 .navbar a                    /*THE NAVBAR ON THE RIGHT SIDE*/
  {
     margin-left: 10px;
+    margin-right : 5px;
     text-decoration: none;
     font-size: 20px;
     transition: .3s;
@@ -39,6 +40,7 @@ body{
  .navbar .active 
  {
     text-decoration: underline;
+    color : #8f9499
  }
 
  .header span 
@@ -53,7 +55,7 @@ body{
     justify-content: center;
     align-items: center;
     height : 150px;
-    border : lime 1px solid;
+    /* border : lime 1px solid; */
 }
 
 .cw               /*THE MAIN HEADING*/
@@ -105,12 +107,14 @@ body{
   /*THE DIV CONTAINING THE BUTTON*/
   
   .button
-  {
-    border : lime 2px solid;
-    height : 150px;
+  { 
+    padding-top : 50px;
+    /* border : lime 2px solid; */
+    height : 200px;
     display : flex;
     justify-content: center;
     align-items: center;
+   
     
   }
   .button a
@@ -138,9 +142,33 @@ body{
    }
 
  .btn:hover{
-    transform: scale(110%);
-    -webkit-transform: scale(110%);
-    -moz-transform: scale(110%);
-    -ms-transform: scale(110%);
-    -o-transform: scale(110%);
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
+    box-shadow: 8px 21px 15px -3px #6d767e;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/*END OF BUTTON ANIMATIONS*/
+/*THE LAST PARA*/
+.box{
+    display : grid;
+    place-items : center;
+}
+.intro 
+{
+    /* border : lime 2px solid; */
+    font-family: 'Inconsolata', monospace;
+    font-size : 25px;
+    width :900px;
+    padding : 15px;
+}
+.intro strong{
+    color : black;
 }
