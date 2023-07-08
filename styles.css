@@ -109,8 +109,8 @@ body{
   .button
   { 
     padding-top : 50px;
-    /* border : lime 2px solid; */
-    min-height : 250px;
+    /* border : red 2px solid; */
+    min-height : 200px;
     display : flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@ body{
 }
 .intro 
 {
-    /* border : lime 2px solid; */
+    /* border : green 2px solid; */
     font-family: 'Inconsolata', monospace;
     font-size : 35px;
     width :75rem;
@@ -176,9 +176,50 @@ body{
 
 .introduction {
     /* border : lime 2px solid; */
-    min-height : 390px;
+    min-height : 300px;
     max-height : 410px;
     display : grid;
     place-items: center;
 
 }
+
+/*END OF HTML AND CSS*/
+/*MEDIA QUERIES*/
+
+ @media (width <= 1366px)
+ { 
+    .navbar a     /*THE RIGHT SIDE OF THE HEADER*/
+    {
+        font-size : 15px;
+    }
+
+    .header img{      /*THE LOGO ON THE HEADER*/
+        height : 20px;
+        width : auto;
+    } 
+
+    .container 
+    {
+        height : 200px;          /*THE DIV CONTAINING THE HEADING*/
+    }
+
+
+
+    .button         /*THE BUTTON ON THE MIDDLE OF THE PAGE*/
+    {
+        min-height: 100px;
+
+    }
+
+    .button .btn{
+        font-size : 20px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .intro   {
+             font-size : 25px;                         /*THE LAST PARAGRAPH*/
+    }      
+
+
+ }
