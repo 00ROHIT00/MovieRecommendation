@@ -54,7 +54,7 @@ body{
     display : flex;
     justify-content: center;
     align-items: center;
-    height : 150px;
+    height : 300px;
     /* border : lime 1px solid; */
 }
 
@@ -110,7 +110,7 @@ body{
   { 
     padding-top : 50px;
     /* border : lime 2px solid; */
-    height : 200px;
+    min-height : 250px;
     display : flex;
     justify-content: center;
     align-items: center;
@@ -125,14 +125,14 @@ body{
 
    .button .btn{
     border: #0f0f10 2px solid;
-    width: 200px;
-    height: 50px;
+    width: 350px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #8f9499;
     font-family: 'Inconsolata', monospace;
-    font-size: 25px;
+    font-size: 35px;
 
     transition: 1s ease;
     -webkit-transition: 1s ease;
@@ -165,10 +165,20 @@ body{
 {
     /* border : lime 2px solid; */
     font-family: 'Inconsolata', monospace;
-    font-size : 25px;
-    width :900px;
+    font-size : 35px;
+    width :75rem;
     padding : 15px;
 }
 .intro strong{
-    color : black;
+    color: black;
+}
+
+
+.introduction {
+    /* border : red 2px solid; */
+    min-height : 390px;
+    max-height : 410px;
+    display : grid;
+    place-items: center;
+
 }
