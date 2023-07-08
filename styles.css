@@ -23,7 +23,7 @@ body{
     margin-left: 10px;
     margin-right : 5px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     transition: .3s;
     color : #0f0f10;
     -webkit-transition: .3s;
@@ -175,7 +175,7 @@ body{
 
 
 .introduction {
-    /* border : red 2px solid; */
+    /* border : lime 2px solid; */
     min-height : 390px;
     max-height : 410px;
     display : grid;
