@@ -59,6 +59,9 @@ body{
     height : 250px;
     /* border : lime 4px solid; */
 }
+.container span{
+    color : #c3c5c9;
+}
 
 .cw               /*THE MAIN HEADING*/
 {
@@ -83,15 +86,15 @@ body{
 
 .cw::before{
     background: #f7f7f8;
-    animation: typewriter 3s steps(9) forwards;
-    -webkit-animation: typewriter 3s steps(9) forwards;
+    animation: typewriter 4s steps(16) forwards;
+    -webkit-animation: typewriter 4s steps(16) forwards;
 }
 
 .cw::after{
     width: 5px;
     background: black;
-    animation:  typewriter 3s steps(9)  forwards,    blink 750ms steps(9) 1s infinite;
-    -webkit-animation:  typewriter 3s steps(9)  forwards,    blink 750ms steps(9) 1s infinite;
+    animation:  typewriter 4s steps(16)  forwards,    blink 750ms steps(16) 1s infinite;
+    -webkit-animation:  typewriter 4s steps(16)  forwards,    blink 750ms steps(16) 1s infinite;
 }
 @keyframes typewriter            
 {
